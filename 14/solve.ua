@@ -12,6 +12,6 @@ OreFromFuel ← ⊡0 ⍢Iter(¬/↧≤0↘1.) ×⍜(⊡⊗□"FUEL"i)(1;) ⊚⧻
 # Part 1
 OreFromFuel 1
 
-# Part 2
+# Part 2 (Binary Search)
 MaxOre ← 1000000000000
 ⊡0 ⍢(⍜⊡;⊙: >MaxOre OreFromFuel .⌊÷2+⍘⊟.)(≠1-⍘⊟.) [0 MaxOre]
