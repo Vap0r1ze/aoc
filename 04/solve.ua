@@ -1,7 +1,7 @@
 Lines ← ⊜∘≠@\n. &fras "input.txt"
 Cards ← ≡(⊜(□⊜parse≠@ .)≠@|. ↘+2⊗@:.) Lines
 CountWins ← /+∊ :∩⊔⍘[⊙∘]
-ScoreWins ← × ⁿ:2 ⊃∘(≥0) -1 CountWins
+ScoreWins ← ⌊ⁿ:2 -1 CountWins
 
 # Part 1
 /+ ≡ScoreWins Cards
