@@ -14,4 +14,10 @@ Locations ← MapAll Mappings Seeds
 # Part 1
 ⊢⊏⍏. Locations
 
-# WTF PART 2???
+# Part 2 (Bruteforce)
+Unmappings ← ⊐≡(≡⍜(↙2|⇌))⇌Mappings
+SeedRanges ← ↯¯1_2Seeds
+IsSeed ← /↥ ≡(↧ ⊃(≥⊢|</+)) SeedRanges
+
+¯1 ¯1
+⍢(⊢ MapAll Unmappings [∘]. +1 ;)(¬IsSeed)
