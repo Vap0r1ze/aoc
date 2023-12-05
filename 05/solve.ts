@@ -28,7 +28,6 @@ let ranges: Range[] = []
 for (let i = 0; i < rawSeeds.length; i += 2) {
     ranges.push(new Range(rawSeeds[i], rawSeeds[i + 1]))
 }
-ranges.sort((a, b) => a.min - b.min)
 
 for (const stage of stages) {
     ranges = ranges.flatMap(r => stage.mapRange(r))
