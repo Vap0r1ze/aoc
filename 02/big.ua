@@ -2,7 +2,7 @@ ParseCube ← [⊙∘] ⊃(parse↙)(⊗:"rgb" ⊡+1) ⊗@ .
 ParseGame ← ⊜ParseCube¬+↻¯1.∊:",;". ↘+2⊗@:.
 
 # GameID [Part1 Part2] FD
-0 [0 0] &fo"input.txt"
+0 [0 0] &fo"input_large.txt"
 
 ⍢(
   ParseGame
