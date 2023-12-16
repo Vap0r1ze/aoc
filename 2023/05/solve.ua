@@ -1,6 +1,6 @@
 Lines ← ⊜□≠@\n. &fras "input.txt"
-Seeds ← ⊜parse≠@ . ↘+2⊗@:. ⊔⊡0Lines
-Mappings ← ⊜(□≡(⊜parse≠@ .⊔))⊐≡(¬∊@:). ↘2Lines
+Seeds ← ⊜⋕≠@ . ↘+2⊗@:. °□⊡0Lines
+Mappings ← ⊜(□≡(⊜⋕≠@ .°□))⊐≡(¬∊@:). ↘2Lines
 
 Map ← ≡(
   -⊡1⊙.,
@@ -8,7 +8,7 @@ Map ← ≡(
   ↧⊃(>|≥0|∘)
   (¯1⋅⋅;|+⊙⋅(⊡0))
 )
-MapAll ← ∧(≡(⊢▽≥0. ⊂:⊙Map.) :¤⊔)
+MapAll ← ∧(≡(⊢▽≥0. ⊂:⊙Map.) :¤°□)
 Locations ← MapAll Mappings Seeds
 
 # Part 1
@@ -35,7 +35,7 @@ StartTime ← now
 ⊙; ⍢(
   + ⇡PoolSize ×PoolSize .;
   -1 ×ChunkSize ⍉⊂:+1.¤
-  ⊡⊢⊂:0⊚≥0. ≡wait ≡spawn(Search ⍘[⊙∘])
+  ⊡⊢⊂:0⊚≥0. ≡wait ≡spawn(Search °[⊙∘])
   ⊙(+1)
 )(<0)
 

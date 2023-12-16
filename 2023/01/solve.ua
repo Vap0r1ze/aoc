@@ -1,6 +1,6 @@
 Lines ← ⊜□≠@\n. &fras "input.txt" # Lines
 
-GetDigits ← × ⊙(-@0) ≤@9.⊔
+GetDigits ← × ⊙(-@0) ≤@9.°□
 GetValue ← + ×10 ⊃⊢(⊢⇌) ▽≠0.
 
 # Part 1
@@ -8,5 +8,5 @@ GetValue ← + ×10 ⊃⊢(⊢⇌) ▽≠0.
 
 # Part 2
 Words ← {"zero" "one" "two" "three" "four" "five" "six" "seven" "eight" "nine"}
-GetNumbers ← /+ ≡(×⊗:Words⊙(⌕∩⊔).)Words
+GetNumbers ← /+ ≡(×⊗:Words⊙(⌕∩°□).)Words
 /+ ≡(GetValue +⊃(GetNumbers)(GetDigits)) Lines

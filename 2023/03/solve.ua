@@ -12,7 +12,7 @@ Kernel ← ↧⊃(IsDigit⊡1_1)(
   ↧1/+ ♭ ∵IsSymbol # Has adjacent symbol?
 )
 PartMask ← ≡FindOnes ⍜(☇2)(≡Kernel) ◫3_3 Border @. Board
-ParseRowParts ← ⊔⊐/⊂ ⊜(□↯(⊃⧻0|⊃⧻parse) IsDigit⊢.) +1IsDigit.
+ParseRowParts ← °□⊐/⊂ ⊜(□↯(⊃⧻0|⊃⧻⋕) IsDigit⊢.) +1IsDigit.
 PartBoard ← ≡ParseRowParts Board
 
 # Part 1
@@ -29,7 +29,7 @@ GearKernel ← (
 GearedBoard ← ⍜(☇2)(≡GearKernel) ◫3_3 Border @. Board
 GearsAndParts ← ⍜⊡≡⋅@G ⊚ =@G GearedBoard ∵□PartBoard
 RatioKernel ← ×⊃(=@G⊡1_1)(
-  /× ▽FindOnes>0. ≡⊔ /(⊂⊂:0) ⍜⊡≡⋅0 ⊚∵⊔=@G.
+  /× ▽FindOnes>0. ≡°□ /(⊂⊂:0) ⍜⊡≡⋅0 ⊚∵°□=@G.
 )
 
 /+♭ ⍜(☇2)(≡RatioKernel) ◫3_3 Border 0 GearsAndParts

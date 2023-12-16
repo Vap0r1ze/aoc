@@ -1,4 +1,4 @@
-ParseCube ← [⊙∘] ⊃(parse↙)(⊗:"rgb" ⊡+1) ⊗@ .
+ParseCube ← [⊙∘] ⊃(⋕↙)(⊗:"rgb" ⊡+1) ⊗@ .
 ParseGame ← ⊜ParseCube¬+↻¯1.∊:",;". ↘+2⊗@:.
 
 # GameID [Part1 Part2] FD
@@ -6,7 +6,7 @@ ParseGame ← ⊜ParseCube¬+↻¯1.∊:",;". ↘+2⊗@:.
 
 ⍢(
   ParseGame
-  ⊕(/↥) ⍘[⊙∘] ⇌⍉         # Get Maximums
+  ⊕(/↥) °[⊙∘] ⇌⍉         # Get Maximums
   ⊙(+1)                  # Increase Game ID
   ×⊙, ⊃(/×≤12_13_14)(/×) # Part 1 and 2
   ⊙+:[⊙∘]                # Add to sum

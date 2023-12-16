@@ -1,8 +1,8 @@
 Input ← &fras "input.txt"
-ParseCube ← [⊙∘] ⊃(parse↙)(⊗:"rgb" ⊡+1) ⊗@ .
+ParseCube ← [⊙∘] ⊃(⋕↙)(⊗:"rgb" ⊡+1) ⊗@ .
 ParseGame ← □⊜ParseCube¬+↻¯1.∊:",;". ↘+2⊗@:.
 Games ← ⊜ParseGame≠@\n. Input
-Counts ← ⊐≡(⊕(/↥) ⍘[⊙∘] ⇌⍉) Games
+Counts ← ⊐≡(⊕(/↥) °[⊙∘] ⇌⍉) Games
 
 # Part 1
 UpperBound ← [12 13 14]

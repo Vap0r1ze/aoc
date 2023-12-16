@@ -2,12 +2,12 @@ Lines ← ⊜□≠@\n. &fras "input.txt"
 SubstrMask ← /↥≡↻⊙¤¯⇡⊃⧻⌕
 Colors ← {"red" "green" "blue"}
 
-ParseSubgame ← /+ ≡(⍜⊡; ⊙: ⍘[⊙∘]⇌) :¤[0 0 0]
+ParseSubgame ← /+ ≡(⍜⊡; ⊙: °[⊙∘]⇌) :¤[0 0 0]
 ⊐≡(⊐≡(⊜□¬SubstrMask", ".) ⊜□¬SubstrMask"; ". ↘+2⊗@:.) Lines
 ≡(
   □≡(
-    ParseSubgame⊔ □≡([⊙∘] ⊙(⊗□:Colors) parse ∩⊔⍘[⊙∘] ⊜□≠@ .⊔)⊔
-  )⊔
+    ParseSubgame°□ □≡([⊙∘] ⊙(⊗□:Colors) ⋕ ∩°□°[⊙∘] ⊜□≠@ .°□)°□
+  )°□
 )
 Games ←
 
