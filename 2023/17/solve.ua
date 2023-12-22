@@ -5,9 +5,9 @@ Items ← ⊜ParseLine≠@\n. &fras "input.txt"
 Det ← /-⇌×⇌≡°ℂ
 CalcArea ← (
   +⊃(
-    \+ ≡(× ⁅ⁿ:e×i×η °⊟) # Complex vertices
-    ÷2 ⌵/+ ≡Det ◫2 ⊂:0  # Shoelace formula
-  | /+ ≡⊡1 ▽≡(∊:2_3 ⊢). # Left/Down edges
+    \+ ≡(× ⁅ⁿ:i °⊟)    # Complex vertices
+    ÷2 ⌵/+ ≡Det ◫2 ⊂:0 # Shoelace formula
+  | /+ ≡⊡1 ▽≡(>1⊢).    # Left/Down edges
   )
   +1 # Start corner
 )
